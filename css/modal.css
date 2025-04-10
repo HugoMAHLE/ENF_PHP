@@ -1,0 +1,140 @@
+/*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 5; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Permitir scroll en caso de ser necesario */
+    /*  background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+	/*border-radius: 10px;*/
+    background-color: white;
+    margin: 10% auto;
+    width: 500px;
+    min-height: 230px;
+    max-height: 600px;
+}
+
+.header-modal{
+	/*z-index: 8;*/
+    width: 100%;
+    height: 85px;
+    background-color: #d30909;
+    border-radius: 5.5px 5.5px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-modal .error{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header-modal .error i{
+    color: white;
+    font-size: 35px;
+    margin: 0 10px;
+}
+
+.header-modal .error p{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.close {
+    background-color: #d30909;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+	/*padding: 5px;*/
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    background-color: #900606;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info{
+    padding: 30px 40px 40px;
+    min-height: 60px;
+    max-height: 600px;
+}
+
+.info ul{
+    list-style: none;
+    margin-bottom: 55px;
+}
+
+/*.info hr{
+    margin-top: 10px;
+    margin-bottom: 65px;
+    height: 1px;
+    background-color: black;
+}*/
+
+.info ul li{
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+}
+
+.info ul li:hover{
+    background: none;
+    border: none;
+    cursor: default;
+}
+
+.buttons{
+    float: right;
+    margin-top: -40px;
+}
+
+.buttons button{
+    padding: 8px 15px;
+    min-width: 120px;
+    max-width: 180px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #dedede;
+}
+
+.buttons button:hover{
+    background-color: #c9c9c9;
+    font-weight: 500;
+}
+

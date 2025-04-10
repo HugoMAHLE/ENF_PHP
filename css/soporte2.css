@@ -1,0 +1,168 @@
+/*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#soporte{
+	cursor: pointer;
+}
+
+.modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 200; 
+    /*padding-top: 100px;*/ 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; /* Permitir scroll en caso de ser necesario */
+    /*  background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content2 {
+	/*border-radius: 10px;*/
+    background-color: #fbfbfb;
+    margin: 16% auto;
+    width: 500px;
+   	height: 335px;
+	border-radius: 5.5px;
+}
+
+.header-modal2{
+	/*z-index: 8;*/
+    width: 100%;
+    height: 85px;
+    background-color: #09164d;
+    border-radius: 5.5px 5.5px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-modal2 .support{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header-modal2 .support i{
+    color: white;
+	font-size: 45px;
+}
+
+.header-modal2 .support p{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.close2 {
+    background-color: #09164d;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+	/*padding: 5px;*/
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    float: right;
+    font-size: 28px;
+}
+
+.close2:hover,
+.close2:focus {
+    background-color: #095899;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info2{
+    padding: 10px 40px 40px;
+    min-height: 60px;
+    max-height: 600px;
+	text-align: center;
+}
+
+.info2 h3{
+	font-size: 20px;
+}
+
+.info2 ul{
+	list-style: none;
+	line-height: 20px;
+}
+
+.info2 ul li p{
+	font-size: 16px;
+	color: black;
+	font-weight: 400;
+}
+
+.info2 ul li i{
+	font-size: 20px;
+	color: black;
+}
+
+#sidebarCollapse span {
+    width: 65%;
+}
+
+/*smaller window*/
+@media screen and (max-width: 1800px){
+	.modal-content2 {
+		margin: 17% auto;
+		width: 390px;
+		height: 270px;
+	}
+	
+	.header-modal2{
+		height: 70px;
+	}
+
+	.header-modal2 .support i{
+		font-size: 35px;
+	}
+	
+	.header-modal2 .support p{
+		font-size: 24px;
+	}
+	
+	.close2 {
+		width: 27px;
+		height: 27px;
+		line-height: 27px;
+		font-size: 22px;
+	}
+	
+	.info2{
+		padding: 3px 40px 40px;
+		height: 200px;
+	}
+
+	.info2 h3{
+		font-size: 16.5px;
+	}
+
+	.info2 ul{
+		line-height: 18px;
+	}
+
+	.info2 ul li p{
+		font-size: 13.5px;
+	}
+
+	.info2 ul li i{
+		font-size: 16px;
+	}
+}
+

@@ -1,0 +1,101 @@
+@import url(header.css);
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    max-width: 1300px;
+    margin-bottom: 80px;
+}
+
+.circulos{
+    height: 250px;
+    width: 250px;
+    background: #dedede;
+    margin: 20px 30px 100px;
+    border-radius: 100%;
+    transition: all 0.3s linear;
+    position: relative;
+    text-align: center;
+}
+
+.desactivado{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: .3;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.bloqueado:hover{
+    cursor: not-allowed;
+}
+
+.circulos:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    /*background-color: #cbcbcb;*/
+}
+
+.contenedor a{
+    text-decoration: none;
+}
+
+.circulos i {
+    color: #09164d;
+    font-size: 150px;
+    line-height: 250px;
+}
+
+.circulos p{
+    color: black;
+    font-size: 23px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 40px;
+}
+
+footer .abajo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#mahle{
+    height: 40px;
+    width: 150px;
+    margin-left: 8px;
+}
+
+#m2s{
+    margin-right: 10px;
+    width: 80px;
+    height: 30px;
+    margin-top: 4px;
+}

@@ -1,0 +1,281 @@
+/*@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Coda');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Geo');/*('https://fonts.googleapis.com/css?family=Holtwood+One+SC');*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url(header.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.usrc{
+	position: relative;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+#usr{
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    background-color: #09164d;
+    /*transform: translateX(106px) translateY(-115px);*/
+    padding: 20px;
+    border-radius: 20px;
+	left: 135px;
+	top: -70px;
+}
+
+form{
+	width: 550px;
+    min-height: 400px;
+    max-height: 600px;
+	/*margin: 0 auto 0;*/
+	background-color: #0f8aa9 /*color original #64ceba - color anterior #00a2cb*/;
+    /*background-color: rgba(8, 129, 163, 0.82);*/
+    padding: 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+    position: relative;
+    /*box-shadow: 4px 4px rgba(0, 102, 128, 0.80); color original #3d8678*/
+    display: flex;
+    justify-content: center;
+}
+
+/*color original*/
+
+h2{
+    margin: 85px auto 0px auto;
+    text-align: center;
+    font-size: 22px;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #09164d;
+    color: white;
+    border-radius: 10px;
+}
+
+/*.campos{
+    margin-left: 30px;
+    margin-top: 0px;
+}*/
+
+input[type="text"], input[type="password"]{
+    width: 400px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    /*border-color: #2f3188;*/
+    border: solid 3px #070F4E;
+}
+
+.campos p{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+#boton{
+    height: 40px;
+    width: 400px;
+    border: none;
+    font-size: 20px;
+    /*letter-spacing: 0px;*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    /*top: 300px;
+    left: 100px;*/
+    background-color: #FCCF4D;
+    /*box-shadow: 3px 3px #ba9427;*/
+    /*background-color: #e3e345;*/
+    
+}
+
+#boton:hover{
+    background-color: #fcc938;
+}
+
+.errores{
+    text-align: center;
+    height: 55px;
+    width: 400px;
+    background-color: #f76e6e;
+    border-radius: 10px;
+    /*line-height: 44px;*/
+    margin: 30px 0 20px;
+    font-weight: 700;
+    color: #bc0000;
+    border: 3px solid #bc0000;
+}
+
+.errores ul li{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/*footer{
+    margin-top: 80px;
+}
+
+footer img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#mahle{
+    height: 40px;
+    width: 150px;
+    margin-left: 8px;
+    bottom: 0;
+}
+
+#m2s{
+    width: 80px;
+    height: 30px;
+    right: 10px;
+    bottom: 6px;
+}*/
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 40px;
+}
+
+footer .abajo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#mahle{
+    height: 40px;
+    width: 150px;
+    margin-left: 8px;
+}
+
+#m2s{
+    margin-right: 10px;
+    width: 80px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+#desarrollador{
+	margin-right: 60px;
+	margin-top: 15px;
+	color: #09164d;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1800px){
+	
+	#usr{
+		height: 110px;
+		width: 110px;
+		padding: 18px;
+		left: 113px;
+		top: -45px;
+	}
+
+	form{
+		width: 470px;
+		min-height: 350px;
+		max-height: 550px;
+		padding: 0;
+		box-shadow: 3px 3px rgba(0, 102, 128, 0.80);
+	}
+	
+	h2{
+		margin: 85px auto 0px auto;
+		font-size: 19px;
+		width: 340px;
+		height: 43px;
+		line-height: 43px;
+	}
+	
+	input[type="text"], input[type="password"]{
+		width: 340px;
+		height: 33px;
+		font-size: 16px;
+	}
+
+	.campos p{
+		padding: 8px;
+		font-size: 17px;
+	}
+
+	.btn{
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+
+	#boton{
+		height: 35px;
+		width: 340px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	
+	.errores{
+		height: 48px;
+		width: 340px;
+		margin: 0 0 35px;
+		font-size: 14px;
+	}
+
+	.errores ul li{
+		max-width: 240px;
+	}
+	
+	#mahle{
+		height: 36px;
+		width: 130px;
+		margin-top: 3px;
+	}
+
+	#m2s{
+		width: 68px;
+		height: 26px;
+		margin-top: 8px;
+	}
+}

@@ -1,0 +1,251 @@
+body{
+    min-height: 100vh;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    max-width: 1550px;
+}
+
+.contenedor2{
+	max-width: 1400px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+/* Loader */
+body.loading{
+	overflow: hidden;
+}
+
+body.loading .loader{
+	display: block;
+}
+
+.loader{
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/dna-preloader.gif);
+	background-position: 50% 50%;
+	background-color: rgba(255, 255, 255, 0.78);
+	background-repeat: no-repeat;
+}
+/* Loader */
+
+/*FORMULARIO*/
+
+.formulario{
+    width: 1500px;
+   	height: 90px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    /*border: 2px solid #09164d;*/
+    background-color: #dedede;
+}
+
+#obligatorio{
+    color: #727272;
+    font-size: 10px;
+	margin-top: 10px;
+}
+
+.campos{
+    margin-top: 20px;
+}
+
+.campos input[type="text"], .campos select{
+    border: 2px solid #09164d;
+    border-radius: 0 10px 10px 0; 
+    padding: 4px;
+    width: 168px;
+	height: 35px;
+    font-size: 14px;
+}
+
+.campos #planta:disabled{
+	color: #828282;
+	background-color: #efefef;
+	cursor: not-allowed;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: black;
+}
+
+#descripcion{
+	width: 128px;
+}
+
+#responsable{
+	width: 130px;
+}
+
+#planta{
+	width: 90px;
+}
+
+#fecha_inicio, #fecha_final{
+	border-radius: 0;
+	width: 120px;
+}
+
+#hora_inicio, #hora_final{
+	width: 120px;
+	margin-left: -6px;
+}
+
+#hora_final{
+	border-radius: 0;
+}
+
+.p-fechas{
+	display: inline-block;
+	color: black;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0 5px;
+}
+
+input[type="text"]:focus, select:focus{
+    border: 2px solid #0eadc9;
+}
+
+.campos i{
+	height: 35px;
+	width: 30px;
+	background-color: #09164d;
+	border: 2px solid #09164d;
+	border-radius: 5px 0 0 5px;
+	font-size: 15px;
+	color: white;
+	position: relative;
+	vertical-align: top;
+	padding: 8px 7px;
+}
+
+.campos #buscar{
+	width: 35px;
+	font-size: 18px;
+	border-radius: 0 5px 5px 0;
+	padding: 7px 4px 7px 4px;
+	right: 4px;
+	cursor: pointer;
+}
+
+#buscar:hover{
+    border: 2px solid #0b78a8;
+    background-color: #0b78a8;
+}
+
+/*FORMULARIO*/
+
+/*TABLA*/
+#titulo_empleado{
+	color: black;
+	font-size: 25px;
+	font-weight: 600;
+	position: relative;
+	right: 490px;
+	top: 15px;
+}
+
+
+#myTable tbody tr{
+   background-color: #fbfbfb;
+}
+
+.table-hover tbody tr:hover td {
+	background-color: #ececec;
+}
+
+#myTable tr td{
+   width: 230px;
+   min-height: 40px;
+   max-height: 500px;
+}
+
+#myTable_length label{
+	margin-top: 15px;
+}
+
+button.excel-button{
+	border: 1px solid transparent;
+	border-radius: 5px;
+	color: white;
+	background: #098709;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+button.pdf-button{
+	border: 1px solid transparent;
+	border-radius: 5px;
+	color: white;
+	background: #c50d0d;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.excel-button:hover{
+	color: white;
+	border: 1px solid transparent;
+	background-color: #035d03;
+}
+
+.pdf-button:hover{
+	color: white;
+	border: 1px solid transparent;
+	background-color: #9f0101;
+}
+/*TABLA*/
+
+/*FOOTER*/
+footer{
+    margin-top: 80px;
+}
+
+footer img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#mahle{
+    height: 40px;
+    width: 150px;
+    margin-left: 8px;
+    bottom: 0;
+}
+
+#m2s{
+    width: 80px;
+    height: 30px;
+    right: 10px;
+    bottom: 6px;
+}
+/*FOOTER*/
+
+#sidebarCollapse span {
+    width: 60%;
+}

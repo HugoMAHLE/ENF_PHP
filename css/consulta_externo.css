@@ -1,0 +1,462 @@
+body{
+    min-height: 100vh;
+}
+
+.contenedor{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.contenedor3{
+	align-self: center;
+}
+
+.contenedor3 h3{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.formulario{
+    width: 550px;
+    max-width: 550px;
+    min-height: 625px;
+    max-height: 1050px; /*830px tamaño máximo sin errores*/
+    border-radius: 10px;
+    background-color: #dedede;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#obligatorio{
+    color: #727272;
+    font-size: 12px;
+}
+
+ul.tabs{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin-left: 55px;
+}
+
+ul.tabs li{
+    background-color: #09164d;
+    border: 2px solid #09164d;
+    width: 200px;
+}
+
+#tabs1{
+    border-radius: 10px 0 0 10px;
+    /*border-right: 1px solid white;*/
+}
+
+#tabs2{
+    border-radius: 0 10px 10px 0;
+    /*border-left: 1px solid white;*/
+}
+
+ul.tabs li:hover{
+    background-color: /*#075b86;*/#dedede;
+    
+}
+
+ul.tabs li a:hover{
+    color: black;
+}
+
+ul.tabs li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
+
+.active{
+    background-color: #dedede;
+    border: 1px solid #09164d;
+    border-radius: 10px;
+}
+
+.active li{
+    border: 2px solid #09164d;
+    border-radius: 10px;
+}
+
+.active span{
+    color: black;
+}
+
+/*hr{
+    border: 2px solid #09164d;
+    width: 425px;
+    background-color: #09164d;
+}*/
+
+.campos input[type="text"], 
+input[type="password"]{
+    border: 2px solid #09164d;
+    border-radius: 0 10px 10px 0; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 380px;
+    font-size: 14px;
+}
+
+#turno{
+    width: 148px;
+}
+
+#empresa{
+    border: 2px solid #09164d;
+    border-radius: 0 10px 10px 0; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 275px;
+    font-size: 14px;
+}
+
+#edad{
+	width: 145px;
+}
+
+.campos input[type="number"]{
+    border: 2px solid #09164d;
+    border-radius: 0 10px 10px 0; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 145px;
+}
+
+.campos input[type="date"]{
+    border: 2px solid #09164d;
+    border-radius: 0 10px 10px 0; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 195px;
+}
+
+.campos select{
+    border: 2px solid #09164d;
+    border-radius: 0 10px 10px 0;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    font-size: 14px;
+    width: 150px;
+}
+
+#descripcion{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.campos textarea{
+    border: 2px solid #09164d;
+    border-radius: 10px; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 83%;
+    max-width: 83%;
+    height: 45px;
+    min-height: 45px;
+    max-height: 65px;
+}
+
+.fila{
+    display: flex;
+    justify-content: center;
+}
+
+.fila_chk{
+	margin-right: 30px;
+}
+
+fila2{
+    display: flex;
+    justify-content: center;
+}
+
+.fila2 p{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 32px;
+    margin-top: 17px;
+}
+
+.fila3{
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+#pract{
+    margin-top: 7px;
+	margin-right: 30px;
+}
+
+.label_check #chk{
+	margin-top: 10px;
+}
+
+.label_check{
+	display: block;
+	position: relative;
+	cursor: auto;
+}
+
+.label_check input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.label_check input:checked ~ .checkmark{
+	background-color: #09164d;
+	border: 2px solid #09164d;
+}
+
+.checkmark:after{
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.label_check input:checked ~ .checkmark:after{
+	display: block;
+}
+
+.label_check .checkmark:after{
+	left: 7px;
+	top: 5px;
+	width: 6px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	transform: rotate(35deg);
+}
+
+.fila .cpract{
+	margin-right: 78px;
+}
+
+.check{
+    display: flex;
+    margin: 10px 30px 0;
+}
+
+.check p{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+	margin-right: 30px;
+}
+
+/*.check input[type="checkbox"]{
+	position: relative;
+	vertical-align: middle;
+}
+
+.cpract input[type="checkbox"]{
+    position: relative;
+	vertical-align: -11px;
+    margin-right: 30px;
+}
+
+.cajas{
+    transform: scale(2);
+}*/
+
+.iconos div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.iconos i{
+    border: 1px solid #09164d;
+    padding: 10px 10px 10px 10px;
+    background-color: #09164d;
+    color: white;
+    vertical-align: -3.4px;
+    font-size: 22px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.iconos .icos{
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 9.5px;
+    padding-bottom: 10.2px;
+    vertical-align: -3px;
+}
+
+.iconos .ico{
+    padding-top: 10px;
+}
+
+.iconos .icon{
+    padding-right: 8px;
+}
+
+.iconos .enfer{
+    padding-right: 8px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, 
+select:focus, input[type="number"]:focus, input[type="date"]:focus{
+    border: 2px solid #0eadc9;
+}
+
+/*input:-moz-read-only { /* Firefox 
+    background-color: yellow;
+}
+
+input:read-only {
+    background-color: yellow;
+}*/
+
+input:disabled , select:disabled{
+    background-color: white;
+}
+
+#boton{
+    width: 420px;
+    height: 43px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    margin: 20px 0 10px;
+    background-color: #0f81b4;
+    color: white;
+}
+
+#boton:hover{
+    background-color: #0c6891;
+}
+
+.errores{
+    text-align: left;
+    min-height: 10px;
+    max-height: 145px;
+    width: 425px;
+    background-color: #f76e6e;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #bc0000;
+    border: 3px solid #bc0000;
+    margin: 10px auto;
+    padding: 10px 0 5px;
+}
+
+.errores ul li{
+    max-width: 360px;
+    min-width: 300px;
+}
+
+.registrado{
+    text-align: center;
+    height: 40px;
+    width: 425px;
+    line-height: 40px;
+    background-color: #16f416;
+    border-radius: 10px;
+    border: 3px solid #028639;
+    margin: 10px auto;
+    padding: 5px 0;
+}
+
+.registrado p{
+    font-weight: 700;
+    color: #028639;
+}
+
+footer{
+    margin-top: 40px;
+    height: 80px;
+}
+
+footer img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#mahle{
+    height: 40px;
+    width: 150px;
+    margin-left: 8px;
+    bottom: 0;
+}
+
+#m2s{
+    width: 80px;
+    height: 30px;
+    right: 10px;
+    bottom: 6px;
+}
+
+#myTable tbody tr{
+   background-color: #f8f8f8;
+}
+
+.table-hover tbody tr:hover td {
+	background-color: #ececec;
+}
+
+#myTable tr td{
+   min-width: 80px;
+   max-width: 100px;
+   min-height: 40px;
+   max-height: 500px;
+}
+
+#myTable tr .tratamientos{
+	min-width: 200px;
+	max-width: 300px;
+}
+
+/*@media (min-width: 1000px) and (max-width: 2000px){
+    .formulario{
+        margin-top: 50px;
+    }
+}*/
